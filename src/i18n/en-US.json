@@ -1,0 +1,12 @@
+{
+	"publicKeys": "Public Keys",
+	"sshKey": "SSH Key",
+	"gpgKey": "GPG Key",
+	"x509Cert": "X.509 Certificate",
+	"donate": "Donate",
+	"crypto": "Cryptocurrency",
+	"other": "Other",
+	"copy": "Copy",
+	"copied": "Copied",
+	"donateNote": "Donations are entirely voluntary. You will not receive anything in return. Refund requests are not accepted."
+}

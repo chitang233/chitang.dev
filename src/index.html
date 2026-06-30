@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chi_Tang</title>
+	</head>
+	<body>
+		<!-- Language Switcher -->
+		<div class="lang-switcher">
+			<button class="btn" id="lang-switch" aria-label="Switch language">EN</button>
+		</div>
+
+		<!-- Profile Card -->
+		<div class="profile-card">
+			<img
+				src="https://r2.chitang.dev/images/avatar.webp"
+				alt="Avatar"
+				class="avatar"
+			/>
+
+			<h1 class="name">Chi_Tang</h1>
+
+			<div class="social-icons">
+				<!-- Mail Icon -->
+				<a
+					href="mailto:me@chitang.dev"
+					class="social-button"
+					aria-label="Mail"
+					title="Mail"
+				>
+					<svg viewBox="0 0 24 24">
+						<path
+							d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8.99l8 6.99 8-6.99V18z"
+						></path>
+					</svg>
+				</a>
+
+				<!-- Telegram Icon -->
+				<a
+					href="https://t.me/chitang233"
+					class="social-button"
+					aria-label="Telegram"
+					title="Telegram"
+				>
+					<svg viewBox="180 300 560 460">
+						<path
+							d="M226.328419,494.722069 C372.088573,431.216685 469.284839,389.350049 517.917216,369.122161 C656.772535,311.36743 685.625481,301.334815 704.431427,301.003532 C708.567621,300.93067 717.815839,301.955743 723.806446,306.816707 C728.864797,310.92121 730.256552,316.46581 730.922551,320.357329 C731.588551,324.248848 732.417879,333.113828 731.758626,340.040666 C724.234007,419.102486 691.675104,610.964674 675.110982,699.515267 C668.10208,736.984342 654.301336,749.547532 640.940618,750.777006 C611.904684,753.448938 589.856115,731.588035 561.733393,713.153237 C517.726886,684.306416 492.866009,666.349181 450.150074,638.200013 C400.78442,605.66878 432.786119,587.789048 460.919462,558.568563 C468.282091,550.921423 596.21508,434.556479 598.691227,424.000355 C599.00091,422.680135 599.288312,417.758981 596.36474,415.160431 C593.441168,412.561881 589.126229,413.450484 586.012448,414.157198 C581.598758,415.158943 511.297793,461.625274 375.109553,553.556189 C355.154858,567.258623 337.080515,573.934908 320.886524,573.585046 C303.033948,573.199351 268.692754,563.490928 243.163606,555.192408 C211.851067,545.013936 186.964484,539.632504 189.131547,522.346309 C190.260287,513.342589 202.659244,504.134509 226.328419,494.722069Z"
+						/>
+					</svg>
+				</a>
+
+				<!-- GitHub Icon -->
+				<a
+					href="https://github.com/chitang233"
+					class="social-button"
+					aria-label="GitHub"
+					title="GitHub"
+				>
+					<svg viewBox="0 0 16 16">
+						<path
+							fill-rule="evenodd"
+							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+						></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+
+		<!-- Public Keys Section -->
+		<section class="keys-section">
+			<h2 data-i18n="publicKeys">Public Keys</h2>
+			<div class="keys-grid">
+				<!-- SSH Key -->
+				<div class="card">
+					<div class="card-header">
+						<h3 data-i18n="sshKey">SSH Key</h3>
+					</div>
+					<div class="card-content">
+						<div class="key-info">
+							<div class="row">
+								<span class="label">Fingerprint</span>
+								<span class="value"
+									>SHA256:f993frBWp60Xov9ZlbRAGr5yLt933/dM9hAQHn4Ubu8</span
+								>
+							</div>
+							<div class="row">
+								<span class="label">Algorithm</span>
+								<span class="value">ED25519</span>
+							</div>
+						</div>
+						<div class="btn-group">
+							<a
+								class="btn"
+								href="https://r2.chitang.dev/keys/id_ed25519.pub"
+								download
+								>.pub</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- GPG Key -->
+				<div class="card">
+					<div class="card-header">
+						<h3 data-i18n="gpgKey">GPG Key</h3>
+					</div>
+					<div class="card-content">
+						<div class="key-info">
+							<div class="row">
+								<span class="label">Fingerprint</span>
+								<span class="value"
+									>AEDF1BB86A40BB8225BDF751DF94909C825CF811</span
+								>
+							</div>
+							<div class="row">
+								<span class="label">Algorithm</span>
+								<span class="value">ED25519</span>
+							</div>
+						</div>
+						<div class="btn-group">
+							<a
+								class="btn"
+								href="https://r2.chitang.dev/keys/Chi_Tang_0xDF94909C825CF811_public.asc"
+								download
+								>.asc</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<!-- X.509 Certificate -->
+				<div class="card">
+					<div class="card-header">
+						<h3 data-i18n="x509Cert">X.509 Certificate</h3>
+					</div>
+					<div class="card-content">
+						<div class="key-info">
+							<div class="row">
+								<span class="label">Subject</span>
+								<span class="value">CN=Chi_Tang Root CA</span>
+							</div>
+							<div class="row">
+								<span class="label">Serial</span>
+								<span class="value"
+									>59D547EE210F4059408D4507A3EDDD53458FB074</span
+								>
+							</div>
+							<div class="row">
+								<span class="label">Valid</span>
+								<span class="value">2026-02-11 ~ 2126-01-17</span>
+							</div>
+						</div>
+						<div class="btn-group">
+							<a
+								class="btn"
+								href="https://r2.chitang.dev/keys/Chi_Tang Root CA_0x028650B52A28203B_public.pem"
+								download
+								>.pem</a
+							>
+							<a
+								class="btn"
+								href="https://r2.chitang.dev/keys/magisk-module.zip"
+								download
+								>Magisk Module</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Donate Section -->
+		<section class="keys-section">
+			<h2 data-i18n="donate">Donate</h2>
+			<div class="donate-grid">
+				<!-- Crypto -->
+				<div class="card">
+					<div class="card-header">
+						<h3 data-i18n="crypto">加密货币</h3>
+					</div>
+					<div class="card-content">
+						<div class="key-info">
+							<div class="crypto-item">
+								<span class="label">TRC20</span>
+								<span class="value" id="addr-trc20"
+									>TQvZsvP4J4D8XjZMwxBzEntLvZiATN8B71</span
+								>
+								<button
+									class="btn-copy"
+									data-i18n="copy"
+									onclick="copyAddr('addr-trc20', this)"
+								>
+									复制
+								</button>
+							</div>
+							<div class="crypto-item">
+								<span class="label">EMV</span>
+								<span class="value" id="addr-emv"
+									>0x7A5e88C4692b22652Ea43585DA6348C8A7BCD50f</span
+								>
+								<button
+									class="btn-copy"
+									data-i18n="copy"
+									onclick="copyAddr('addr-emv', this)"
+								>
+									复制
+								</button>
+							</div>
+							<div class="crypto-item">
+								<span class="label">XMR</span>
+								<span class="value" id="addr-xmr"
+									>48e5fmGRZqcgAWorgi996wegEJm8w9iZyGaw2CUQJmN4YeagVcyU2LpaE55f1EMwYH1i6dcCZRY6F4HjtySLUeFS4i7K81A</span
+								>
+								<button
+									class="btn-copy"
+									data-i18n="copy"
+									onclick="copyAddr('addr-xmr', this)"
+								>
+									复制
+								</button>
+							</div>
+							<div class="crypto-item">
+								<span class="label">TON</span>
+								<span class="value" id="addr-ton"
+									>UQCe_pQKmDZDiEDr382AfOsOlgY4Vu-DctZNbV3VfkQnm92V</span
+								>
+								<button
+									class="btn-copy"
+									data-i18n="copy"
+									onclick="copyAddr('addr-ton', this)"
+								>
+									复制
+								</button>
+							</div>
+							<div class="crypto-item">
+								<span class="label">BTC</span>
+								<span class="value" id="addr-btc"
+									>bc1q47wgu0flllv8a33qzyymvvqyutje0dj9vfk7y9</span
+								>
+								<button
+									class="btn-copy"
+									data-i18n="copy"
+									onclick="copyAddr('addr-btc', this)"
+								>
+									复制
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Other -->
+				<div class="card">
+					<div class="card-header">
+						<h3 data-i18n="other">其他</h3>
+					</div>
+					<div class="card-content">
+						<div class="btn-group">
+							<a
+								class="btn"
+								href="https://github.com/sponsors/chitang233"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub Sponsors</a
+							>
+							<a
+								class="btn"
+								href="https://donate.stripe.com/aEU2a8dL9fj652M9B1"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Stripe (CNY)</a
+							>
+							<a
+								class="btn"
+								href="https://donate.stripe.com/6oE3ec36v8UIan6cNc"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Stripe (EUR)</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="donate-note" data-i18n="donateNote">
+				捐赠即意味该行为完全自愿，您无法从中得到任何回报，不接受任何退款申请
+			</p>
+		</section>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

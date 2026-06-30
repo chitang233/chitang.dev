@@ -1,0 +1,388 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	background-color: #e5e7eb;
+	font-family:
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji";
+	padding: 2rem 1rem;
+	gap: 2rem;
+	text-autospace: ideograph-alpha ideograph-numeric;
+}
+
+/* ===== Profile Card ===== */
+.profile-card {
+	background-color: #f3f4f6;
+	border-radius: 16px;
+	padding: 32px 24px;
+	width: 100%;
+	max-width: calc((960px - 2 * 1.25rem) / 3);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow:
+		0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	text-align: center;
+}
+
+.avatar {
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 16px;
+}
+
+.name {
+	font-size: 24px;
+	font-weight: bold;
+	color: #374151;
+	margin: 0 0 8px 0;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: transparent;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.social-button svg {
+	width: 24px;
+	height: 24px;
+	fill: #4b5563;
+	transition: fill 0.2s ease-in-out;
+}
+
+.social-button:hover svg {
+	fill: #1f2937;
+}
+
+/* ===== Keys Section ===== */
+.keys-section {
+	width: 100%;
+	max-width: 960px;
+}
+
+.keys-section h2 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	color: #374151;
+	margin-bottom: 1.25rem;
+}
+
+.keys-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+	.keys-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.card {
+	background-color: #f3f4f6;
+	border-radius: 16px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-shadow:
+		0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	padding: 1rem 1.25rem;
+	border-bottom: 1px solid #d1d5db;
+}
+
+.card-header h3 {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #374151;
+	margin: 0;
+}
+
+.card-content {
+	padding: 1.25rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.key-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	margin-bottom: 1rem;
+	flex: 1;
+}
+
+.key-info .row {
+	display: grid;
+	grid-template-columns: 72px minmax(0, 1fr);
+	align-items: start;
+	column-gap: 0.6rem;
+	font-size: 0.85rem;
+}
+
+.key-info .label {
+	color: #6b7280;
+	line-height: 1.4;
+}
+
+.key-info .value {
+	font-family:
+		"SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+	font-size: 0.82rem;
+	color: #374151;
+	min-width: 0;
+	line-height: 1.4;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+.btn-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.45rem 0.9rem;
+	border-radius: 8px;
+	border: 1px solid #d1d5db;
+	background: transparent;
+	color: #374151;
+	font-size: 0.85rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.2s;
+	font-family: inherit;
+}
+
+.btn:hover {
+	background: rgba(55, 65, 81, 0.08);
+	border-color: #9ca3af;
+}
+
+.divider {
+	height: 1px;
+	background: #d1d5db;
+	margin: 1rem 0;
+}
+
+/* ===== Donate Section ===== */
+.donate-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+	.donate-grid {
+		grid-template-columns: 1fr auto;
+	}
+}
+
+.donate-grid .card:last-child .btn-group {
+	flex-direction: column;
+}
+
+.crypto-item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.crypto-item .label {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: #374151;
+	min-width: 48px;
+}
+
+.crypto-item .value {
+	font-family:
+		"SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+	font-size: 0.78rem;
+	color: #374151;
+	overflow-wrap: anywhere;
+	word-break: break-all;
+	flex: 1;
+	line-height: 1.4;
+}
+
+.btn-copy {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.3rem 0.6rem;
+	border-radius: 6px;
+	border: 1px solid #d1d5db;
+	background: transparent;
+	color: #374151;
+	font-size: 0.75rem;
+	cursor: pointer;
+	transition: all 0.2s;
+	font-family: inherit;
+	flex-shrink: 0;
+}
+
+.btn-copy:hover {
+	background: rgba(55, 65, 81, 0.08);
+	border-color: #9ca3af;
+}
+
+.btn-copy.copied {
+	border-color: #10b981;
+	color: #10b981;
+}
+
+.donate-note {
+	text-align: center;
+	font-size: 0.8rem;
+	color: #6b7280;
+	margin-top: 1rem;
+}
+
+/* ===== Language Switcher ===== */
+.lang-switcher {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 100;
+}
+
+.lang-switcher .btn {
+	font-size: 0.78rem;
+	padding: 0.35rem 0.7rem;
+}
+
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #1f2937;
+	}
+	.profile-card {
+		background-color: #374151;
+		box-shadow:
+			0 10px 15px -3px rgba(0, 0, 0, 0.2),
+			0 4px 6px -2px rgba(0, 0, 0, 0.1);
+	}
+	.name {
+		color: #f9fafb;
+	}
+	.social-button svg {
+		fill: #9ca3af;
+	}
+	.social-button:hover svg {
+		fill: #f9fafb;
+	}
+
+	.keys-section h2 {
+		color: #f9fafb;
+	}
+	.card {
+		background-color: #374151;
+		box-shadow:
+			0 10px 15px -3px rgba(0, 0, 0, 0.2),
+			0 4px 6px -2px rgba(0, 0, 0, 0.1);
+	}
+	.card-header {
+		border-bottom-color: #4b5563;
+	}
+	.card-header h3 {
+		color: #f9fafb;
+	}
+	.key-info .label {
+		color: #9ca3af;
+	}
+	.key-info .value {
+		color: #e5e7eb;
+	}
+	.btn {
+		border-color: #4b5563;
+		color: #93c5fd;
+	}
+	.btn:hover {
+		background: rgba(108, 139, 173, 0.1);
+		border-color: #93c5fd;
+	}
+	.divider {
+		background: #4b5563;
+	}
+	.crypto-item .label {
+		color: #f9fafb;
+	}
+	.crypto-item .value {
+		color: #e5e7eb;
+	}
+	.btn-copy {
+		border-color: #4b5563;
+		color: #93c5fd;
+	}
+	.btn-copy:hover {
+		background: rgba(108, 139, 173, 0.1);
+		border-color: #93c5fd;
+	}
+	.btn-copy.copied {
+		border-color: #10b981;
+		color: #10b981;
+	}
+	.donate-note {
+		color: #9ca3af;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		padding: 1.5rem 0.75rem;
+	}
+	.profile-card {
+		padding: 24px 16px;
+		max-width: none;
+	}
+	.avatar {
+		width: 80px;
+		height: 80px;
+	}
+	.name {
+		font-size: 20px;
+	}
+	.card-content {
+		padding: 1rem;
+	}
+	.key-info .row {
+		grid-template-columns: 1fr;
+		row-gap: 0.15rem;
+	}
+}
